@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <form action="" novalidate target="_blank" method="post" autocomplete="on">
+        <h1>Form</h1>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 50%;"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your mail" style="width: 50%;"><br><br>
+       <label for="country">Country:</label><br>
+<input type="text" id="country" name="country" placeholder="Select your country" list="country-list">
+<datalist id="country-list">
+    <option value="India">
+    <option value="USA">
+    <option value="UK">
+    <option value="Canada">
+    <option value="Australia">
+</datalist>
+
+        <br><br>
+        <label for ="country_code">Country_code:</label><br>
+<input type="text" id="country_code" name="country_code" pattern="A-[A-Za-z0-9]+" placeholder="A-123"><br><br>
+<label for=":state">State:</label><br>
+        <input type="text" id="state" name="state" placeholder="Enter your state" style="width: 50%;"><br><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" placeholder="Enter your city" style="width: 50%;"><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+<label for ="pincode">Pincode:</label><br>
+<input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="123456"><br><br>
+        <p>Note: All fields are required.</p>
+<label for="datemax">Date of Joining</label><br>
+        <input type="date" id="date" name="date" max="2025-07-29"><br><br>
+        
+        <label for ="datemin">Date of Graduation</label><br>
+        <input type="date" id="date" name="date" min="2025-07-29"><br><br>
+        <label for ="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="60"><br><br>
+<h3> choose your Year</h3>
+<input type="radio" id="1st"name="year" value="1st">
+<label for="HTML">1st</label><br>
+<input type="radio" id="2nd"name="year" value="2nd">
+<label for="HTML">2nd</label><br>
+<input type="radio" id="3rd"name="year" value="3rd">
+<label for="HTML">3rd</label><br>
+<input type="radio" id="4th"name="year" value="4th">
+<label for="HTML">4th</label><br>
+<br>
+<h2>Select Skills</h2>
+<input type="checkbox" id="HTML" name="skills" value="HTML">
+<label for="HTML">HTML</label><br>      
+<input type="checkbox" id="CSS" name="skills" value="CSS">
+<label for="CSS">CSS</label><br>
+<input type="checkbox" id="JS" name="skills" value="JS">
+<label for="JS">JS</label><br>
+<input type="checkbox" id="PHP" name="skills" value="PHP">
+<label for="PHP">PHP</label><br>
+<br>
+<label for ="semester">Semester:</label><br>
+<select id="semester" name="semester">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+<br>
+<br>
+
+<div> 
+<h3>About</h3>
+<textarea id="message" name="About " rows="4" cols="50" placeholder="Tell about yourself." ></textarea><br><br>
+</div>
+<br>
+<label for="file">Upload Photo :</label><br>
+<input type="file" id="file" name="file" multiple accept=".jpg, .jpeg, .png, .pdf">
+<br><br>
+<br>
+<input type="submit" value="Submit">
+<br>
+
+<button onclick="alert('Form submitted successfully!')">confirm</button>
+
+<h2>choose your hobbies</h2>
+    </form>
+</html>

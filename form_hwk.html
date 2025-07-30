@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color: brown;">
+
+    <h2>Personal Details</h2>        
+    <center><form action="submit_form.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+<label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+Gender:
+<input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+<label for="contact">Contact Number:</label>
+<input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br><br>
+
+<h2>Educational Qualification</h2>
+
+        <label for="degree">Degree:</label>
+<input list="degree-list" id="degree" name="degree" placeholder="Select group" required>
+<datalist id="degree-list">
+            <option value="Btech">
+<option value="Mtech">
+<option value="Phd">
+        </datalist><br><br>
+
+        <label for="branch">Branch:</label>
+        <input list="branch-list" id="branch" name="branch" placeholder="Select branch" required>
+        <datalist id="branch-list">
+            <option value="AIML">
+            <option value="CSE">
+            <option value="ECE">
+            <option value="EEE">
+            <option value="MECH">
+        </datalist><br><br>
+        <label for="hobbies">Hobbies:</label>
+   <input type="checkbox" id="hobby1"  value="Reading">
+  <label for="hobby1">Playing chess</label>
+        <input type="checkbox" id="hobby2"  value="Traveling">
+ <label for="hobby2">Reading books</label><br><br>
+  <label for=""address"><bold>Address:</bold></label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+<laber for="attach resume">Attach Resume:</label>
+<input type="file" id="resume" name="resume"><br><br>
+    <input type="submit" value="Submit">
+ <input type="reset" value="Reset">
+     <button type="button" onclick="alert('Button clicked!')">Click this button </button>
+    </form>
+</center>
+</body>
+</html>
